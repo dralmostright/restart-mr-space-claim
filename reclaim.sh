@@ -141,8 +141,6 @@ then
 	ReportInfo "\nReclaiming Space............"
 	rm -f /u01/app/oracle/diag/rdbms/oggsrc/oggsrc/trace/*.trc
 	rm -f /u01/app/oracle/diag/rdbms/oggsrc/oggsrc/trace/*.trm
-	#rm /findata1/admin/bokho/bdump/*.trc
-	#rm /findata1/admin/bokho/udump/*.trc
 	FunRestartMR ${ORACLE_HOME}
 else
 	ReportInfo "\nDatabase is not Standby database"
